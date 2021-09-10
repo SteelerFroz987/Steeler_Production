@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400&family=Oswald:wght@300&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0 ;
+    margin: 0;
+    font-family: 'Noto Sans JP', sans-serif ;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #f7f0e9;
+    transition: .6s;
+  }
+  h1 {
+    font-size: 5em;
+    color: #3d3935;
+  }
+  #container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  .switch input {
+    display: none;
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ccc;
+    border-radius: 34px;
+    transition: .4s;
+  }
+  .slider:before {
+    content: "";
+    position: absolute;
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background: #fff;
+    border-radius: 50%;
+    transition: .4s;
+  }
+  input:checked + .slider {
+    background: #b892ff;
+  }
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  .dark-mode {
+    background: #0b0a14;
+  }
+  .dark-mode h4 {
+    color: #f7f0e9;
+  }
+
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.my-button:hover {
+    color: white;
+}
+
+.page-content{
+    margin: 4%; 
+}
+
+.page-content header{
+    margin-top: 5%;
+    max-width: 80%;
+}
+
+.page-content header h1{
+    margin: 0;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans sans-serif;
+    font-size: 6vw;
+}
+
+.page-content header p{
+    line-height: 30px;
+    color: #818181;
+}
+
+.page-content header button{
+    background-color: inherit;
+    border: none;
+    outline: none;
+    padding: 0%;
+    font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #ccc;
+    cursor: pointer;
+}
+
+.page-content header button:hover{
+    color: #ccc;
+    border-bottom-color:black;
+}
+
+.page-content .presentation-image{
+    margin-top: 5%;
+}
+
+.page-content .presentation-image img{
+    max-width: 100%;
+    height: auto;
+}
+
+.page-content .projects-section{
+    margin-top: 6%;
+}
+
+.page-content .projects-section h1{
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 3vw;
+}
+
+.page-content .projects-section .projects{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    width: 22.5%;
+    justify-content: center;
+}
+
+.page-content .projects-section .projects .project h4{
+    margin: 0;
+}
+
+.page-content .projects-section .projects .project .description{
+    font-size: 10px;
+}
+
+.page-content .projects-section .projects .project img{
+    max-width: 100%;
+}
+.page-content .projects-section .projects .project .dates{
+    font-size: 13px;
+    color:rgb(145 , 145 , 145)
+}
+
+footer{
+    margin-top: 5%;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
+    background-color: black;
+    color: blanchedalmond;
+    padding: 10px;
+}
+
+footer .colonne{
+    font-size: 12px;
+    color: #ccc;
+    cursor: pointer;
+}
+
+footer .colonne h3{
+    color: rgb(255, 0, 0);
+}
+
+footer .colonne a{
+    text-decoration: none;
+}
+
+footer .colonne p{
+    color: rgb(255, 255, 255);
+}
+
+
+footer .colonne p:hover{
+    color: rgb(26, 142, 219);
+}
+
+
+@media screen and (max-width: 700px) {
+    nav {
+        justify-content: center;
+    }
+    nav ul {
+        display: none;
+    }
+
+    .page-content{
+        padding-top: 5%;
+    }
+
+    .page-content .projects-section{
+        padding-top: 5%;
+    }
+
+    .page-content header{
+        margin-top: 10%;
+        max-width: 100%;
+    }
+
+    .page-content .projects-section{
+        margin-top: 15%;
+    }
+
+    .page-content .projects-section h1 {
+        font-size: 1.5em;
+    }
+
+    .projects {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .project {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .page-content .projects-section .projects .project p{
+        size: 200px;
+    }
+
+    .page-content .projects-section .projects .project{
+        margin-bottom: 20px;
+        max-width: 100%;
+    }
+    
+    footer{
+        justify-content: flex-start;
+    }
+
+    footer .colonne{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        
+    }
+}
