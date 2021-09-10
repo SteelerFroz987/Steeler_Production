@@ -1,5 +1,5 @@
 <?php
-include __DIR__. "/../classes/Database.class.php";
+include 'Database.class.php';
 
 
 class Model{

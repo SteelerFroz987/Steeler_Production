@@ -34,7 +34,7 @@
                     </ul>
 
                     <form class="d-flex">
-                        <button class="btn btn-outline-success" type="submit"><a class="my-button" href="admin/connexion.php"> Connexion Administrateur </a></button>
+                        <button class="btn btn-outline-success" type="submit"><a class="my-button" href="./admin/connexion.php"> Connexion Administrateur </a></button>
                     </form>
 
                 </div>
